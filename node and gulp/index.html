@@ -43,6 +43,12 @@
 				padding: 2px 15px !important;
 				display: inline-block;
 		  }
+
+		  .reveal section img {
+		  	background: none;
+		  	border: none;
+		  	box-shadow: none;
+		  }
 		</style>
 	</head>
 
@@ -61,19 +67,24 @@
 				</section>
 
 				<section data-background="img/nodejs.png">
-					<div style="background-color: rgba(0,0,0,.85); padding:20px 0;">
-						<h2>Step 1 - Install Node</h2>
-						<p>
-							Node is available for Mac, Linux, and Windows.
-						</p>
-						<p>
-							Just go to <a href="http://nodejs.org/" target="_blank">nodejs.org</a> and click on install.
-						</p>
-					</div>
-
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
+					<section>
+						<div style="background-color: rgba(0,0,0,.85); padding:20px 0;">
+							<h2>Step 1 - Install Node</h2>
+							<p>
+								Node is available for Mac, Linux, and Windows.
+							</p>
+							<p>
+								Just go to <a href="http://nodejs.org/" target="_blank">nodejs.org</a> and click on install.
+							</p>
+						</div>
+					</section>
+					<section>
+						<div style="background-color: rgba(0,0,0,.85); padding:20px 0;">
+							<h2 >Node Package Manager</h2>
+							<a href="https://www.npmjs.org/" target="_blank"><img src="img/npm.png" height="202" width="518"></a>
+						</div>
+					</section>
+					
 				</section>
 
 				<!-- Example of nested vertical slides -->
@@ -83,11 +94,11 @@
 						<p>
 							Because you'll be using it a lot. 
 						</p>
-						<img src="img/terminal.png" height="424" width="845" />
+						<img src="img/fingers.gif" height="272" width="500">
 					</section>
 					
 					<section>
-						<h2>Basic Command line tutorial</h2>
+						<h2>Super Duper Basic Commands</h2>
 						<ul>
 							<li><span class="list-code">cd</span> = change directory</li>
 							<li><span class="list-code">mkdir</span> = make a new directory</li>
@@ -112,35 +123,55 @@
 					</section>
 
 					<section>
-						<h2>On a Windows Machine?</h2>
-						<p>Windows XP and later omes with Powershell and that's good enough</p>
+						<h2>Stuck with Windows?</h2>
+						<p>You can use Powershell, which comes pre-installed with Windows since XP</p>
 						<img src="img/powershell.jpg" height="320" width="538" />
+						<p>But I'd also recommend installing <a href="http://git-scm.com/download/win" target="_blank">Git for Windows</a> <br>and using Git Bash that it comes with</p>
 					</section>
 				</section>
 
 				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
+						<section>
+								<h1>What is a Build Tool?</h1>
+								<h2>aka Task Runner</h2>
+								<p>Task runners let you perform a bunch of tasks all at once saving you the hassle of having to manually do each one separately</p>
+								<a href="http://gruntjs.com/" target="_blank"><img src="img/grunt-logo.png" width="160" /></a>
+								<a href="http://gulpjs.com/" target="_blank"><img src="img/gulp-logo.png" width="128" /></a>
+						</section>
 
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=cube#/transitions">Cube</a> -
-						<a href="?transition=page#/transitions">Page</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a> -
-						<a href="?transition=linear#/transitions">Linear</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?#/transitions">Default</a>
-					</p>
+						<section>
+							<h2>Typical Tasks</h2>
+							<p>Lets take Javascript for example. </p>
+							<hr>
+							<ul>
+								<li>
+									Lint it (check it for errors) usint <a href="http://www.jshint.com/" target="_blank">JSHint</a> or JSLint
+								</li>
+								<li>
+									Compile it if you're using <a href="http://coffeescript.org/" target="_blank">Coffeescript</a>, <a href="http://www.typescriptlang.org/" target="_blank">Typescript</a>, etc
+								</li>
+								<li>
+									Concatenate many files into one
+								</li>
+								<li>
+									Minify (aka Uglify) to reduce file size
+								</li>
+								<li>
+									Save it to a destination directory
+								</li>
+							</ul>
+						</section>
+
+						<section>
+							<h2>I choo-choo-choose Gulp</h2>
+							<img src="img/choo_choo.png" width="300" />
+							<a href="http://gulpjs.com/" target="_blank"><img src="img/gulp-logo.png" width="200" /></a>
+						</section>
+
+						<section>
+							<h1>Why Gulp?</h1>
+
+						</section>
 				</section>
 
 				<section>
