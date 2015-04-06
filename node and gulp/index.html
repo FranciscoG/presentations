@@ -181,6 +181,65 @@
 						</section>
 				</section>
 
+				<section>
+					<!-- Installing Gulpa and starting your package.json -->
+					<section>
+						<img src="img/sound-of-music.png">
+						<h2>Let's start from the very beginning</h2>
+						<p>Open up your terminal and create a new directory and run the following commands:</p>
+						<pre class="fragment"><code data-trim>
+npm init
+						</code></pre>
+						<p class="fragment"><small>This will ask you a bunch of questions and create a new package.json which you'll need</small></p>
+						
+						<pre class="fragment"><code data-trim>
+npm install -g gulp
+						</code></pre>
+						<p class="fragment"><small>Installs Gulp globally (You'll need both a global and local install)</small></p>
+
+						<pre class="fragment"><code data-trim>
+npm install gulp --save-dev
+						</code></pre>
+						<p class="fragment"><small>This is your local installation</small></p>
+					</section>
+
+					<section>
+						<h2>Setting up your folder structure</h2>
+						<p>You can do it however you wamt, they key is to be organized</p>
+						<pre><code data-trim>
+- project
+    package.json
+    - node_modules &larr; folder is created by npm when you install a dependency
+    - src
+      - stylus
+      - js
+      - jade
+    - app  &larr; some people use the word "dist" for this folder 
+      index.html
+      - css
+      - img
+      - js
+ 
+						</code></pre>
+					</section>
+
+					<section>
+						<h2>Now let's install our main programs</h2>
+						<pre class="fragment"><code data-trim>
+npm install gulp-stylus --save-dev
+						</code></pre>
+						
+						<pre class="fragment"><code data-trim>
+npm install gulp-jade --save-dev
+						</code></pre>
+											
+					</section>
+					
+					<section>
+
+					</section>
+				</section>
+
 								<section>
 					<h2>Most Basic gulpfile.js</h2>
 					<pre><code data-trim>
